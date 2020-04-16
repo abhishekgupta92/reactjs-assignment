@@ -32,7 +32,7 @@ class App extends React.Component {
       return (
         <div className="App">
           <form>
-            <Input placeholder="Placeholder" inputProps={{ 'aria-label': 'description' }} name="name" onChange={this.handleChange} />
+            <Input placeholder="Enter Country" inputProps={{ 'aria-label': 'description' }} name="name" onChange={this.handleChange} /><br/><br/>
             <Button color="primary" disabled={!this.state.country.length} onClick={this.formSubmit}>Submit</Button>
           </form>
         </div>

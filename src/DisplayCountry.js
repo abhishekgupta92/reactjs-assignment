@@ -15,13 +15,16 @@ const styles = (theme) => createStyles({
     display: "flex",
     flexDirection: "row",
     justifyContent: "center",
-    marginRight: 20,
+    marginRight: 20
   },
   container: {
     display: "flex",
     flexDirection: "row",
     justifyContent: "flex-start",
     marginRight: 100,
+    margin: 50,
+    minWidth: 300,
+    maxWidth: '80%'
   },
   weatherIcon: {
     float: "left",
@@ -56,8 +59,6 @@ class DisplayCountry extends Component {
   render() {
     const { countryData } = this.props;
     const { classes } = this.props;
-
-    console.log(this.state.weatherData);
 
     return <Box className={classes.container}>
       <Card>
